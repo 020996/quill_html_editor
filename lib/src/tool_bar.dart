@@ -812,20 +812,20 @@ class ToolBarState extends State<ToolBar> {
               alignment: Alignment.centerLeft,
               selectedItemBuilder: (context) {
                 return [
-                  _fontSelectionTextItem(type: 'Small'),
-                  _fontSelectionTextItem(type: 'Normal'),
-                  _fontSelectionTextItem(type: 'Large'),
-                  _fontSelectionTextItem(type: 'Huge'),
+                  _fontSelectionTextItem(type: '8 px'),
+                  _fontSelectionTextItem(type: '12 px'),
+                  _fontSelectionTextItem(type: '16 px'),
+                  _fontSelectionTextItem(type: '20 px'),
                 ];
               },
               isDense: true,
               value: _formatMap['size'] ?? 'normal',
               style: TextStyle(fontSize: 12, color: widget.iconColor!),
               items: [
-                _fontSizeItem(type: 'Small', fontSize: 8),
-                _fontSizeItem(type: 'Normal', fontSize: 12),
-                _fontSizeItem(type: 'Large', fontSize: 16),
-                _fontSizeItem(type: 'Huge', fontSize: 20),
+                _fontSizeItem(type: '8 px', fontSize: 8),
+                _fontSizeItem(type: '12 px', fontSize: 12),
+                _fontSizeItem(type: '16 px', fontSize: 16),
+                _fontSizeItem(type: '20 px', fontSize: 20),
               ],
               onChanged: (value) {
                 _formatMap['size'] = value;
